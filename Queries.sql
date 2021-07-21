@@ -36,10 +36,13 @@ select country_name from team minus ;select country_name from team where team_id
 
  delete from coach where coach_id='CH596';
  
+ --procedure call
  call get_team('IND1221');
  
  call get_stadium('MAT201');
  
+ 
+ --triggers
  select * from elimination;
  
  delete from team where team_id = 'BAN9852';

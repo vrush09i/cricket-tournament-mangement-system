@@ -1,0 +1,11 @@
+-- get stadium 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_stadium`(IN matchnum varchar(30) )
+BEGIN
+select stadium from matches where match_id = matchnum;
+END
+
+--get team
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_team`(IN team varchar(30))
+BEGIN
+Select * from team where team_id = team;
+END
